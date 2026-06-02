@@ -4,6 +4,12 @@ Neuroboros (:mod:`neuroboros`)
 ==============================
 
 """
+"""
+==============================
+Neuroboros (:mod:`neuroboros`)
+==============================
+
+"""
 
 from . import ensemble as ensemble
 from . import linalg as linalg
@@ -34,6 +40,8 @@ from .datasets import (
     HCA,
     MonkeyAction,
     Bellaria,
+    HCD,
+    HBN
 )
 from .datasets import get_dataset as dataset
 from .glm import glm
