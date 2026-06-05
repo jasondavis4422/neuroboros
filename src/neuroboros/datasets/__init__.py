@@ -1570,19 +1570,19 @@ class HCD(Dataset):
             if self.rename_func is not None:
                 fn = [
                     fp_version,
-                    "confounds_legacy_basic_RMS",
+                    "confounds",
                     self.rename_func(sid, task, run, "_" + suffix),
                 ]
             elif self.renaming is None:
                 fn = [
                     fp_version,
-                    "confounds_legacy_basic_RMS",
+                    "confounds",
                     f"sub-{sid}_task-{task}_run-{run:02d}_{suffix}",
                 ]
             else:
                 fn = [
                     fp_version,
-                    "confounds_legacy_basic_RMS",
+                    "confounds",
                     f"sub-{sid}_task-{task}_run-{run:02d}_{suffix}",
                 ]
                 fn = self.renaming["/".join(fn)].split("/")
